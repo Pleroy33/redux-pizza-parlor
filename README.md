@@ -15,18 +15,7 @@ Right now, the owner enters all of the orders in SQL, but they want any of their
 ```
 npm install
 npm run server
-```
-
-Now that the server is running, open a new terminal tab with `cmd + t` and start the react client app.
-
-**Start your client**
-
-```
-npm run client
-```
-
-## Base Mode ad API DOCS
-
+```x
 The tasks for Base Mode are broken down further [on this Trello Board](https://trello.com/b/aWXfG8D6/redux-pizza-parlor). Take time before diving into the code to copy this board and build out the plan even further.
 
 After starting up the server, the following routes should be available. You can test them with Postman.
