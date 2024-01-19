@@ -8,7 +8,7 @@ import { useDispatch } from 'react-redux';
 import PizzaList from '../PizzaList/PizzaList'
 import CustomerCheckout from '../CustomerCheckout/CustomerCheckout';
 
-import { HashRouter as Router, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Route, Link } from 'react-router-dom';
 import Admin from '../Admin/Admin';
 
 
