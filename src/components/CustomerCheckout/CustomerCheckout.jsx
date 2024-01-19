@@ -10,40 +10,22 @@ import { HashRouter as Router, Route, Link } from "react-router-dom";
 function CustomerCheckout (){
 console.log ('in checkout')
 const cart = useSelector(store => store.cart)
-const total = useSelector(store => store.total)
+const globalTotal = useSelector(store => store.total)
 const customer = useSelector(store => store.orders)
 console.log(customer)
 
-
-// const handleSubmit = event => {
-//     event.preventDefault();
-
-//     console.log(`Adding order`, {customer, cart});
-
-//     const newOrder = {
-//         customer_name,
-//         street_address,
-//         city,
-//         zip,
-//         type,
-//         total,
-//         pizzas
-//     }
-
-//     // TODO - axios request to server to add order
-//     axios.post('/api/order', newOrder)
-//       .then( response => {
-//         console.log("Add new book worked!")
-//       })
-//       .catch(error => {
-//         console.error(error)
-//         alert('Sorry, the book you submitted didnt work bro!')
-//       })
-
+const customer_name = ''
+const street_address = ''
+const city = ''
+const zip = ''
+const type = ''
+const total = ''
+const pizzas = ''
 
 
 
     return (
+        
         <>
 <h1>Prime Pizza</h1>
 
@@ -65,7 +47,7 @@ console.log(customer)
 {cart.map((cart) => (
           
           <li key={cart.id}> 
-          {cart.name}
+          {name}
           {cart.price}
           
           </li>
@@ -75,7 +57,7 @@ console.log(customer)
 
 
 <p>Total: {total}</p>
-
+<button >checkout</button>
 </>
 
 
