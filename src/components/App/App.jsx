@@ -6,6 +6,7 @@ import { useSelector } from 'react-redux';
 import { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux';
 import PizzaList from '../PizzaList/PizzaList'
+import CustomerCheckout from '../CustomerCheckout/CustomerCheckout';
 
 import { HashRouter as Router, Route, Link } from "react-router-dom";
 
@@ -28,7 +29,11 @@ function App() {
         <CustomerForm/>
       </Route>
 
-    
+      <Route path ="/CustomerCheckout/">
+        <CustomerCheckout/>
+      </Route>
+
+
       
 
 

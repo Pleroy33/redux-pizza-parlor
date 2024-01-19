@@ -4,9 +4,11 @@ import { HashRouter as Router, Route, Link } from "react-router-dom";
 function CustomerForm() {
 
 return (
-<h2>violence
 
-</h2>)
+
+
+
+)
 }
 
 
