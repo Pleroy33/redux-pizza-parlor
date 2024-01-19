@@ -9,7 +9,7 @@ import PizzaList from '../PizzaList/PizzaList'
 import CustomerCheckout from '../CustomerCheckout/CustomerCheckout';
 
 import { HashRouter as Router, Route, Link } from "react-router-dom";
-import CustomerCheckout from '../CustomerCheckout/CustomerCheckout';
+import Admin from '../Admin/Admin';
 
 
 function App() {
@@ -33,7 +33,10 @@ function App() {
       <Route path ="/CustomerCheckout/">
         <CustomerCheckout/>
       </Route>
-    
+  
+      <Route path ="/Admin/">
+        <Admin/>
+      </Route>
       
 
 

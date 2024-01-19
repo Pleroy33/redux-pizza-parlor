@@ -19,16 +19,7 @@ const total = useSelector(store => store.total)
 <h2>Checkout</h2>
 
 
-<table>
-    
-    <th>Name</th><th>Cost</th>
-    
-    <tr>
-
-    </tr>
-</table>
-
-<p>Total: {total}</p>
+<p>Total: ${total}</p>
 
 </>
 
