@@ -8,6 +8,7 @@ import { useDispatch } from 'react-redux';
 import PizzaList from '../PizzaList/PizzaList'
 
 import { HashRouter as Router, Route, Link } from "react-router-dom";
+import CustomerCheckout from '../CustomerCheckout/CustomerCheckout';
 
 
 function App() {
@@ -28,6 +29,9 @@ function App() {
         <CustomerForm/>
       </Route>
 
+      <Route path ="/CustomerCheckout/">
+        <CustomerCheckout/>
+      </Route>
     
       
 

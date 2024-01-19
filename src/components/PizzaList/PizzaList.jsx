@@ -34,7 +34,7 @@ function PizzaList(){
   <div className='PizzaList'>
         <header className='App-header'>
           <h1 className='App-title'></h1>
-          <p>Total: {total}</p>
+          <p>Total: ${total}</p>
           <Link to ='/CustomerForm/'><button>NEXT</button></Link>
         </header>
         {pizzaList.map((pizza) => (
