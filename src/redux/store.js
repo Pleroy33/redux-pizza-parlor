@@ -12,7 +12,7 @@ const total = (state = 0, action) => {
   }
   console.log(state)
 
-  return Math.round(state);
+  return (state);
 }
 
 const pizzaList = (state = [], action) => {

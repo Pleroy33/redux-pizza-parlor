@@ -12,6 +12,17 @@ function PizzaList(){
   const cart = useSelector(store => store.cart); // destructuring them for easier use.
   const total = useSelector(store => store.total)
 
+ const handleClick = (pizza) => {
+
+  dispatch({ type: 'ADD', 
+  payload: {
+    id: pizza.id ,
+    quantity: 1,
+    name: pizza.name,
+    price: pizza.price
+  } })
+
+  }
 
   useEffect(() => {
     fetchPizzas();
@@ -40,8 +51,8 @@ function PizzaList(){
         {pizzaList.map((pizza) => (
           <>
             <li key={pizza.id}> {pizza.name}: {pizza.price} <img src={pizza.image_path} /></li>
-            <button onClick={() => dispatch({ type: 'ADD', payload: pizza })}>Add</button>
-            <button onClick={() => dispatch({ type: 'REMOVE', payload: pizza })}>Remove</button>
+            <button onClick={() => handleClick(pizza) }>Add</button>
+         
           </>
 
         ))}

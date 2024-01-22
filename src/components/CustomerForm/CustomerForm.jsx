@@ -44,7 +44,7 @@ function CustomerForm() {
     <label htmlFor="Delivery">Delivery</label>
     <input type="radio" id="Pickup" name="deliveryMethod" value="Pickup" onChange={(e) => setDelivery(e.target.value)} checked={delivery === "Pickup"} />
     <label htmlFor="Pickup">Pickup</label>
-    <button type = 'submit'>ORDER</button>
+    <button type = 'submit'>Checkout</button>
   
       </form>
       </>
